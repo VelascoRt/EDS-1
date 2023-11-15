@@ -1,86 +1,496 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>EDS SOFTWARE</title>
-    
-        <!-- CSS PERSONALIZADO -->
-        <link rel="stylesheet" href="css/style.css">
-    
-        <!-- Iconos -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-        
-        <!-- BOOTSTRAP -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    </head>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EDS SOFTWARE</title>
+
+  <!-- CSS PERSONALIZADO -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style_catalogo.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Javascript -->
+  <script defer src="js/app.js"></script>
+
+  <!-- Iconos -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+  <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
 <body>
     <!--Header-->
-    <header>    
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">EDS SOFTWARE</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ">
-                  <li class="nav-item Inicio">
-                    <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item dropdown Contactos">
-                    <a class="nav-link dropdown-toggle active" href="#" role="button">
-                      Cátalogo
-                    </a>
-                  </li>
-                  <li class="nav-item Servicios">
-                    <a class="nav-link" href="servicios.html">Servicios</a>
-                  </li>
-                  <li class="nav-item dropdown Contactos">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Contactos
-                    </a>
-                    <ul class="dropdown-menu">
-                      <h3>Contactos</h3>
-                      <li><a class="dropdown-item" href="#">
-                        <i class="bi bi-linkedin"></i>  EDS SOFTWARE</a>
-                      </li>
-                      <li><a class="dropdown-item" href="#"><i class="bi bi-facebook"></i>  EDS Software</a></li>
-                      <li><a class="dropdown-item" href="#"><i class="bi bi-whatsapp"></i>  EDS Software</a></li>
-                    </ul>
-                  </li>
-                </ul>
+    <body>
+      <!--Header-->
+      <header>    
+          <nav class="navbar navbar-expand-lg">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#">EDS SOFTWARE</a>
+                <button class="navbar-toggler d-flex d-lg-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="toggler-icon top-bar"></span>
+                  <span class="toggler-icon middle-bar"></span>
+                  <span class="toggler-icon bottom-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item Inicio">
+                      <a class="nav-link active " aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown Contactos">
+                      <a class="nav-link dropdown-toggle" href="#" role="button">
+                        Cátalogo
+                      </a>
+                    </li>
+                    <li class="nav-item Servicios">
+                      <a class="nav-link" href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item dropdown Contactos">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Contactos
+                      </a>
+                      <ul class="dropdown-menu">
+                        <h3>Contactos</h3>
+                        <li><a class="dropdown-item" href="#">
+                          <i class="bi bi-linkedin"></i>  EDS SOFTWARE</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#"><i class="bi bi-facebook"></i>  EDS Software</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="bi bi-whatsapp"></i>  EDS Software</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
-          </nav>
-
-    </header>
+            </nav>
+  
+      </header>
 
     <main>
 
-    </main>
+      <!-- Parallax -->
 
-    <footer>
-        <section class="container-fluid">
-            <div class="row">
-                <div class="col"><h3>AYUDA</h3></div>
-                <div class="col"><h3>TERMINOS Y CONDICIONES</h3></div>
+      <div class="parallax"></div>
+
+      <!-- Titulo -->
+
+      <section class="catalogo_titulo hidden">
+        <h1>
+          Diseña tu pagina web
+        </h1>
+        <div class="line hidden"></div>
+      </section>
+      
+
+      <!-- Tarjetas -->
+
+      <section class="container">
+
+        <!-- Primera fila -->
+
+        <div class="row">
+          <div class="col-12 col-md-6 left">
+            <div class="card">
+              <h5 class="card-title">
+                <div class="row">
+                  <div class="col">Diseño web responsivo</div>
+                  <div class="col-2"></div>
+                </div>
+              </h5>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col order-1 order-lg-0">
+                    <p class="card-text">Crear el diseño de pagina a tu medida, 
+                      teniendo en cuenta el publico meta y los 
+                      colores de tu marca. Esto incluye pagina de inicio, 
+                      servicios clientes, contacto y el maquetado </p>
+                  </div>
+                  <div class="col-2 order-0 order-lg-1">
+                    <input type="checkbox" name="diseño" class="diseño" id="check" value="Diseño web responsivo $1000" precio="1000">
+                    <h5>$1000</h5>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="row">
-                <div class="col"><h3>CATALOGO</h3></div>
-                <div class="col"><h3>POLÍTICA Y PRIVACIDAD</h3></div>
+          </div>
+          <div class="col-12 col-md-6 right">
+            <div class="card">
+              <h5 class="card-title">
+                <div class="row">
+                  <div class="col-2"></div>
+                  <div class="col">Slider</div>
+                </div>
+              </h5>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-2">
+                    <input type="checkbox" class="slider" id="check" value="Slider $2000" precio="1000">
+                    <h5>$2000</h5>
+                  </div>
+                  <div class="col">
+                    <p class="card-text">Mostrar imagenes predeterminadas que rotan entre si cada cierto tiempo para promocionar productos o servicios enlazado a una pagina externa o interna  </p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="row">
-                <div class="col"><h3>SERVICIOS</h3></div>
-                <div class="col"></div>
+          </div>
+        </div>
+
+        <!-- Segunda fila -->
+
+        <div class="row">
+          <div class="col-12 col-md-6 left">
+            <div class="card">
+              <h5 class="card-title">
+                <div class="row">
+                  <div class="col">Blog corporativo</div>
+                  <div class="col-2"></div>
+                </div>
+              </h5>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col order-1 order-lg-0">
+                    <p class="card-text">Sección de noticias completamente administrable para publicar contenido. 
+                      Incluye categorías, etiquetas, y progamación de fechas. </p>
+                  </div>
+                  <div class="col-2 order-0 order-lg-1">
+                    <input type="checkbox" class="blog" id="check" value="Blog corporativo $1500" precio="1000">
+                    <h5>$1500</h5>
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
-    </footer>
-    
-    <!-- Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+          </div>
+          <div class="col-12 col-md-6 right">
+            <div class="card">
+              <h5 class="card-title">
+                <div class="row">
+                  <div class="col-2"></div>
+                  <div class="col">Cátalogo</div>
+                </div>
+              </h5>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-2">
+                    <input type="checkbox" class="catalogo" id="check" value="Cátalogo $1000" precio="1000">
+                    <h5>$1000</h5>
+                  </div>
+                  <div class="col">
+                    <p class="card-text">Catalogo basado en categorias subcategorias 
+                      y un buscador con su URL.
+                      Incluye las opciones del panel administrativo 
+                      para agregar, editar y eliminar productos junto 
+                      con una galeria   </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tercera fila -->
+
+        <div class="row">
+          <div class="col-12 col-md-6 left">
+            <div class="card">
+              <h5 class="card-title">
+                <div class="row">
+                  <div class="col">Filtros personalizados</div>
+                  <div class="col-2"></div>
+                </div>
+              </h5>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col order-1 order-lg-0">
+                    <p class="card-text">Es una funcionalidad extra al cátalogo
+                       que permite visualizar los productos a través de filtros
+                        que pueden ser creados, editados y eliminados.
+                        (Se necesita agregar catalogo)  </p>
+                  </div>
+                  <div class="col-2 order-0 order-lg-1">
+                    <input type="checkbox" class="filtros" id="check" value="Filtros personalizados $1000" precio="1000">
+                    <h5>$1000</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 right">
+            <div class="card">
+              <h5 class="card-title">
+                <div class="row">
+                  <div class="col-2"></div>
+                  <div class="col">Carrito de compras</div>
+                </div>
+              </h5>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-2">
+                    <input type="checkbox" class="carrito" id="check" value="Carrito de compras $1000" precio="1000">
+                    <h5>$1000</h5>
+                  </div>
+                  <div class="col">
+                    <p class="card-text">Una función que trabaja con catálogo, 
+                      permite (desde la pagina pública) 
+                      arma un pedido de productos, eligiendo la cantidad.  </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cuarta fila -->
+
+        <div class="row">
+          <div class="col-12 col-md-6 left">
+            <div class="card">
+              <h5 class="card-title">
+                <div class="row">
+                  <div class="col">Pago con Paypal</div>
+                  <div class="col-2" order-1 order-lg-0></div>
+                </div>
+              </h5>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col order-1 order-lg-0">
+                    <p class="card-text">Requiere el módulo de carrito de compras y permite
+                       la opción de pagar por medio de Paypal  </p>
+                  </div>
+                  <div class="col-2 order-0 order-lg-1">
+                    <input type="checkbox" class="pago-paypal" id="check" value="Pago con Paypal $1000" precio="1000">
+                    <h5>$1000</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 right">
+            <div class="card">
+              <h5 class="card-title">
+                <div class="row">
+                  <div class="col-2"></div>
+                  <div class="col">Pago con tarjetas</div>
+                </div>
+              </h5>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-2">
+                    <input type="checkbox" class="pago-tarjetas" id="check" value="Pago con tarjetas $1000" precio="1000">
+                    <h5>$1000</h5>
+                  </div>
+                  <div class="col">
+                    <p class="card-text">Requiere el módulo de carrito de compras
+                       y permite la opcion de pagar con 
+                       tarjeta de crédito o de débito.  </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quinta fila -->
+
+        <div class="row">
+          <div class="col-12 col-md-6 left">
+            <div class="card">
+              <h5 class="card-title">
+                <div class="row">
+                  <div class="col">Dominio .mx por un año</div>
+                  <div class="col-2"></div>
+                </div>
+              </h5>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col order-1 order-lg-0">
+                    <p class="card-text">El dominio .mx séra la dirección URL 
+                      por la cual los usuarios ingresarán 
+                      a la página web del proyecto. Es necesario 
+                      contar con un servidor (Hosting) para alojar el dominio.  </p>
+                  </div>
+                  <div class="col-2 order-0 order-lg-1">
+                    <input type="checkbox" class="dominio-mx" id="check" value="Dominio .mx por un año $1000" precio="1000"> 
+                    <h5>$1000</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 right">
+            <div class="card">
+              <h5 class="card-title">
+                <div class="row">
+                  <div class="col-2"></div>
+                  <div class="col">Dominio .com por un año</div>
+                </div>
+              </h5>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-2">
+                    <input type="checkbox" class="dominio-com" id="check" value="Dominio .com por un año $1000" precio="1000">
+                    <h5>$1000</h5>
+                  </div>
+                  <div class="col">
+                    <p class="card-text">El dominio .com será la direccion URL 
+                      por la cual los usuarios ingresarán a la página web del proyecto.  
+                      Es necesario contar con un servidor (Hosting) para alojar el dominio.  </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sexta fila -->
+
+        <div class="row">
+          <div class="col-12 col-md-6 left">
+            <div class="card">
+              <h5 class="card-title">
+                <div class="row">
+                  <div class="col">Hosting de un año</div>
+                  <div class="col-2"></div>
+                </div>
+              </h5>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col order-1 order-lg-0">
+                    <p class="card-text">Un servidor conectado a internet las 24 horas
+                      que permite almacenar el contenido de una página web
+                       junto con la base de datos.(El costo corresponde a una cuota anual.)</p>
+                  </div>
+                  <div class="col-2 order-0 order-lg-1">
+                    <input type="checkbox" class="hosting" id="check" value="Hosting de un año $1000" precio="1000">
+                    <h5>$1000</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 right">
+            <div class="card">
+              <h5 class="card-title">
+                <div class="row">
+                  <div class="col-2"></div>
+                  <div class="col">Certificado</div>
+                </div>
+              </h5>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-2">
+                    <input type="checkbox" class="certificado" id="check" value="Certificado $1000" precio="1000">
+                    <h5>$1000</h5>
+                  </div>
+                  <div class="col">
+                    <p class="card-text">Certificado SSL
+                      que protege la información e identidad
+                      de la marca y clientes.
+                        </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- Botón que muestra los resultados -->
+      
+      <div class="boton_mostrar hidden">
+        <a href="#compra" class="btn" id="mostrar" onclick="calculateTotal()">Llevar al carrito</a>
+      </div>
+      <!-- Compra -->
+
+      <section class="container seccion_compra hidden" id="compra">
+        <div class="row">
+          <div class="col"><h2>Total del proyecto seleccionado</h2></div>
+          <div class="col">
+            <div class="resultado" id="total"><h2>$</h2></div>
+          </div>
+          <div class="col"></div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <ul id="lista" class="list-group"></ul>
+          </div>
+          <div class="col">
+            <h3>
+            Todo producto seleccionado será enviado por un supervisor y se dará la respuesta de la solicitud acordada.
+          </h3>
+        </div>
+        </div>
+        <div class="solicitud">
+          <div class="row">
+            <div class="col">
+              <h4>Enviar Solicitud</h4>
+            </div>
+            <div class="col"> <a href="#" class="btn btn-primary">Enviar</a>   
+            </div>  
+          </div>
+        </div>
+        
+      </section>
+
+      
+      
+
+    </main>
+<!-- Footer -->
+<footer>
+  <section class="container-fluid">
+    <div class="row">
+      <div class="col-3 col-md-1">
+        <div class="linesm1"></div>
+      </div>
+      <div class="col-3 col-md-1">
+        <div class="linesm2"></div>
+      </div>
+    </div>
+    <section class="links">
+      <div class="row ayuda">
+        <div class="col-lg-1 col-sm-3 ">
+          <h3>AYUDA</h3>
+        </div>
+        <div class="col col-sm-4">
+          <h3>TERMINOS Y CONDICIONES</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-1 col-sm-4">
+          <h3>CATALOGO</h3>
+        </div>
+        <div class="col-3 col-sm-4">
+          <h3>POLÍTICA Y PRIVACIDAD</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-2">
+          <h3>SERVICIOS</h3>
+        </div>
+        <div class="col-2"></div>
+      </div>
+    </section>
+    <section class="contactos_footer">
+      <i class="bi bi-linkedin"></i>
+      <i class="bi bi-facebook"></i>
+      <i class="bi bi-whatsapp"></i>
+    </section>
+    <section class="copyright">
+      <h1>© EDS TODOS LOS DERECHOS RESERVADOS</h1>
+    </section>
+  </section>
+</footer>
+
+
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -1,0 +1,195 @@
+
+/* Parallax */
+
+.parallax {
+    background-image: url("/img/parallax.jpg");
+    min-height: 500px;
+    background-attachment: fixed,scroll;
+    background-position: center center, left top;
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, 400px;
+}
+
+/* Cartas */
+
+.card {
+    margin-top: 5%;
+}
+
+.catalogo_titulo h1{
+    text-align: center;
+    margin-top: 4%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-weight: 200;
+    line-height: normal;
+    font-style: normal;
+}
+
+.card-body h5 {
+    text-align: center;
+    margin-top: 0.8%;
+    font-size: 1.5rem;
+    font-family: 'Crimson Text', serif;
+    font-weight: 700;
+    line-height: normal;
+    font-style: normal;
+
+}
+
+.left .card-title {
+    font-size: 2.2rem;
+    text-align: end;
+    margin-top: 5%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    line-height: normal;
+    font-style: normal;
+}
+
+.left .card-text {
+    font-size: 1.3rem;
+    text-align: end;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    line-height: normal;
+    font-style: normal;
+}
+
+.right .card-title {
+    font-size: 2.2rem;
+    text-align: start;
+    margin-left: 3%;
+    margin-top: 5%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    line-height: normal;
+    font-style: normal;
+}
+
+.right .card-text {
+    font-size: 1.3rem;
+    text-align: start;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    line-height: normal;
+    font-style: normal;
+}
+
+/* Checkboxes */
+
+input[type="checkbox"]{
+    appearance: none;
+    -webkit-appearance: none;
+    height: 5em;
+    width: 5rem;
+    background-color: #F8F8F8;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+input[type="checkbox"]:after {
+
+    font-family: "Font Awesome 5 Free";
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: #EFBCD5;
+
+    content: "\f00c";
+}
+
+input[type="checkbox"]:hover {
+    background-color: #FFFBDB;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #270722;
+}
+
+input[type="checkbox"]:checked::after {
+    color: white;
+}
+
+input[type="checkbox"]:checked:hover {
+    background-color: #EFBCD5;
+}
+
+/* Seccion de compras */
+
+.seccion_compra {
+    margin-top: 15%;
+    background-color: #F8F8F8;
+    margin-bottom: 15%;
+}
+
+.seccion_compra h2 {
+    font-size: 1.5rem;
+    text-align: start;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    line-height: normal;
+    font-style: normal;
+    margin-bottom: 10%;
+    margin-top: 5%;
+}
+
+.resultado {
+    background-color: #dddddd;
+    font-size: 1.5rem;
+}
+
+.boton_mostrar{
+    display: grid;
+    place-items: center;
+    height: 10rem;
+}
+
+.btn {
+    background: #270722 !important;
+    color: white !important;
+}
+
+.boton_mostrar a{
+    width: 10%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-group-item {
+    font-size: 2.25rem;
+}
+
+.solicitud{
+    margin-top: 5%;
+    padding-bottom: 2%;
+
+}
+
+/* Querys */
+@media (max-width: 767.98px) {
+    .catalogo_titulo h1{
+        font-size: 2.5rem;
+    }
+
+    .card-title {
+        text-align: center !important;
+    }
+
+    .card-text {
+        text-align: start !important;
+    }
+
+    .boton_mostrar a {
+        font-size: 1.5rem;
+        padding: 4rem 4rem 4rem 4rem;
+    }
+
+    .list-group-item {
+        font-size: 1.5rem;
+    }
+}

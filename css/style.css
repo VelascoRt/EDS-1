@@ -31,28 +31,8 @@ html, body {
     overflow-x: hidden;
 }
 
-/* Javascript */
-.hidden {
-    opacity: 0;
-    filter: blur(5px);
-    transition: all 0.5s;
-}
-
-.show{
-    opacity: 1;
-    transform: translateX(0);
-    filter: blur(0);
-}
-
-@media(prefers-reduced-motion){
-    .hidden {
-        transition: none;
-    }
-}
-
-
-
 /* General  */
+
 * {
     color: #270722;
 }
@@ -78,7 +58,7 @@ h1 {
 }
 
 .navbar-brand {
-    color: #270722 !important;
+    color: linear-gradient(125deg, #270722 0%, #862277 100%) !important;
     font-family: 'Panton', sans-serif;
     font-size: 1.5rem !important;
     font-style: italic;
@@ -138,7 +118,6 @@ h1 {
     width: 13.8125rem;
     height: 19.1875rem;
     flex-shrink: 0;
-    border-radius: 2.75rem !important;
     background: #270722 !important;
      color: #FFFDFD !important;
 }
@@ -217,6 +196,7 @@ h1 {
     width: 7rem;
     height: 6.0625rem;
     display: block;
+    align-self: flex-end;
     margin-left: 45rem;
     margin-top: -1.4rem;
 }
@@ -232,7 +212,7 @@ h1 {
 }
 
 .carousel-item img {
-    height: 75rem;
+    height: 100%;
     width: auto;
 }
 
@@ -253,6 +233,7 @@ h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     font-size: 2rem;
+    margin-top: 5%;
     font-style: normal;
     line-height: normal;
 }
@@ -272,10 +253,10 @@ h1 {
 
 .mision {
     color: #270722;
+    text-align: end;
 }
 
 .mision h1 {
-    text-align: center;
     font-family: 'Panton', sans-serif;
     font-size: 2.5rem;
     font-style: italic;
@@ -284,7 +265,6 @@ h1 {
 }
 
 .mision h2 {
-    text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     font-size: 2rem;
@@ -300,11 +280,17 @@ h1 {
     margin: 6.81rem 0 0 6.5rem;
 }
 
+.Img2 img {
+    display: block;
+    align-self: flex-start;
+}
+
 .Valores {
     margin-top: 5.31rem;
 }
 
 .titleEDS {
+    text-align: center !important;
     margin-top: 16.94rem;
     margin-bottom: -1.5rem;
 }
@@ -376,6 +362,7 @@ h1 {
     color: #270722;
     text-align: end;
     margin-top: -2.5rem;
+    margin-bottom: 4rem;
     margin-right: 1rem;
     font-family: 'Panton', sans-serif;
     font-size: 1.5rem;
@@ -384,7 +371,84 @@ h1 {
     line-height: normal;
 }
 
-@media (max-width:1400px) {
+/* Hamburguesa  */
+
+.navbar-toggler {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    transition: .5s ease-in-out;
+}
+
+.navbar-toggler, 
+.navbar-toggler:focus,
+.navbar-toggler:active, 
+.navbar-toggler-icon:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: 0 !important;
+}
+
+.navbar-toggler span {
+    margin: 0;
+    padding: 0;
+}
+
+.toggler-icon {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: #270722;
+    border-radius: 20px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.middle-bar {
+    margin-top: 0px;
+}
+
+.navbar-toggler .top-bar {
+    margin-top: 0px;
+    transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+    margin-top: 0px;
+    transform: rotate(-135deg);
+}
+
+.navbar-toggler.collapsed .top-bar {
+    margin-top: -20px;
+    transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar{
+    margin-top: 20px;
+    transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .toggler-icon {
+    background: linear-gradient(125deg, #270722 0%, #641658 100%);
+}
+
+
+
+
+@media (min-width:1200px) {
     
 /* Header  */
 
@@ -449,7 +513,6 @@ h1 {
     width: 13.8125rem;
     height: 19.1875rem;
     flex-shrink: 0;
-    border-radius: 2.75rem !important;
     background: #270722 !important;
      color: #FFFDFD !important;
 }
@@ -526,9 +589,11 @@ h1 {
 
 .logo2 img {
     width: 7rem;
-    height: 6.0625rem;
+    height: auto;
     display: block;
-    margin-left: 30rem;
+    align-self: end;
+    margin: 0 0 0 80%;
+    height: 6.0625rem;
     margin-top: -1.4rem;
 }
 
@@ -542,7 +607,7 @@ h1 {
 }
 
 .carousel-item img {
-    height: 50rem;
+    height: 75%;
     width: auto;
 }
 
@@ -550,9 +615,9 @@ h1 {
 /* Informacion de paquetes */
 
 .info h2 {
-    margin: 4.62rem 7rem 1.56rem 6rem;
+    margin: 0 0 0 0;
     font-family: 'Panton', sans-serif;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-style: italic;
     font-weight: bold;
     line-height: normal;
@@ -563,7 +628,7 @@ h1 {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-style: normal;
     line-height: normal;
 }
@@ -583,34 +648,48 @@ h1 {
 /* Mision / Vision */
 
 .mision h1 {
-    text-align: center;
+
     font-family: 'Panton', sans-serif;
     font-size: 2rem;
     font-style: italic;
     font-weight: bold;
+    text-align: end;
     line-height: normal;
 }
 
 .mision h2 {
-    text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     font-size: 1.5rem;
     font-style: normal;
+    text-align: end;
     line-height: normal;
     margin-top: 2.31rem;
 }
 
 .mision img {
-    width: 25rem *1.6;
-    height: 25rem;
+    width: 80%;
+    height: 80%;
     flex-shrink: 0;
-    margin: 3rem 0 0 3rem;
+    display: block;
+    align-self: end;
 }
 
 .Valores {
     margin-top: 5.31rem;
+    text-align: start !important;
+    margin-right: 5rem;
 }
+
+.Img2 img{
+    margin: 0 0 0 0;
+    align-self: flex-start;
+}
+
+.mision {
+    text-align: center;
+}
+
 
 .final {
     margin-bottom: 6.31rem;
@@ -671,13 +750,12 @@ h1 {
 
 /* responsividad 1000 */
 
-@media (max-width:1000px) {
+@media (max-width:1199.98px) {
     /* Navbar */
 .dropdown-menu {
     width: 13.8125rem;
     height: 19.1875rem;
     flex-shrink: 0;
-    border-radius: 2.75rem !important;
     background: #270722 !important;
      color: #FFFDFD !important;
 }
@@ -710,27 +788,23 @@ h1 {
     }
     
     .title h2 {
-        margin-top: 80%;
-        margin-left: 23%;
+        margin: 0 0 0 0;
+        margin-left: 15%;
         font-size: 2.5rem;
     }
     
     .title h3 {
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: -15%;
         font-size: 2rem;
         margin-top: 2%;
-        margin-left: 3%;
         
     }
     
     .title h1 {
-        position: absolute;
-        top: 70%;
-        left: 33%;
 
-        display: block;
-        width: auto;
-        height: 25%;
-        flex-shrink: 0;
+        margin-left: 20%;
 
         text-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
         font-family: 'Panton', sans-serif;
@@ -738,12 +812,12 @@ h1 {
         font-style: italic;
         font-weight: bold;
         line-height: normal;
+
         }
     
     .title img {
-        position: absolute;
-        top: 25%;
-        left: 35%;
+
+        margin-left: 30%;
 
         display: block;
         width: auto;
@@ -755,7 +829,9 @@ h1 {
 /* Imagen pc */
 
 .pc img{
-    opacity: 0%;;
+    opacity: 0%;
+    height: 0%;
+    width: 0%;
 }
 
 /* Segundo logo */
@@ -775,7 +851,7 @@ h1 {
 }
 
 .carousel-item img {
-    height: 26rem;
+    height: 50%;
     width: auto;
 }
 
@@ -788,16 +864,44 @@ h1 {
     background-color: #270722;
 }
 
+.info h2 {
+    margin: 0 0 0 0;
+    font-family: 'Panton', sans-serif;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: bold;
+    line-height: normal;
+    text-align: center;
+}
+
 /* Mision / Vision */
 
 .mision img {
-    width: 25rem;
-    height: 15.125rem;
     flex-shrink: 0;
-    margin: 6.81rem 0 0 6.5rem;
-    margin-left: 20%;
+    margin: 0 0 0 0;
     margin-top: 10%;
+    text-align: center;
     
+}
+
+.mision h1 {
+
+    font-family: 'Panton', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    line-height: normal;
+}
+
+.mision h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    text-align: center;
+    font-style: normal;
+    line-height: normal;
+    margin-top: 2.31rem;
 }
 
 .Valores {
@@ -886,14 +990,15 @@ h1 {
 }
 
 
-/* responsividad 500 */
+/* responsividad 768 */
 
-@media (max-width:600px) {
+@media (max-width:767.98px) {
 
     .navbar-nav .nav-link.active .nav-link{
         text-align: left !important;
     }
 
+    /* Titulo */
     /* Titulo */
     .title {
         font-family: 'Montserrat', sans-serif;
@@ -903,8 +1008,7 @@ h1 {
     }
     
     .title h2 {
-        margin-top: 110%;
-        margin-left: 23%;
+        margin: 0 0 0 0;
         font-size: 2rem;
         text-align: center;
     }
@@ -918,14 +1022,8 @@ h1 {
     }
     
     .title h1 {
-        position: absolute;
-        top: 70%;
-        left: 25%;
 
-        display: block;
-        width: auto;
-        height: 25%;
-        flex-shrink: 0;
+        margin-bottom: 0;
 
         text-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
         font-family: 'Panton', sans-serif;
@@ -936,23 +1034,26 @@ h1 {
         }
     
     .title img {
-        position: absolute;
-        top: 22%;
-        left: 25%;
-
         display: block;
         width: auto;
         height: 25%;
         flex-shrink: 0;
     }
 
+    .pc img {
+        height: 0px;
+        margin: 0 0 0 0;
+    }
+
     
 .mision img {
-    width: 25rem;
-    height: 15.125rem;
+    width: 100%;
+    height: 80%;
     flex-shrink: 0;
-    margin: 6.81rem 0 0 6.5rem;
-    margin-left: 5%;
+    margin: 0 0 0 0;
+    display: block;
+    align-items: center;
+    margin-left: 1%;
     margin-top: 10%;
     
 }
@@ -979,5 +1080,24 @@ h1 {
     font-style: normal;
     font-weight: bold;
     line-height: normal;
+    }
+}
+
+/* Javascript */
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 0.5s;
+}
+
+.show{
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0);
+}
+
+@media(prefers-reduced-motion){
+    .hidden {
+        transition: none;
     }
 }
