@@ -3,7 +3,7 @@
 
 .parallax {
     background-image: url("/img/parallax.jpg");
-    min-height: 500px;
+    min-height: 300px;
     background-attachment: fixed,scroll;
     background-position: center center, left top;
     background-repeat: no-repeat, no-repeat;
@@ -136,9 +136,22 @@ input[type="checkbox"]:checked:hover {
     margin-top: 5%;
 }
 
+.seccion_compra h3 {
+    font-size: 1.5em;
+}
+
+.seccion_compra img {
+    margin-top: 5%;
+    height: 30rem;
+    width: 37rem;
+
+}
+
 .resultado {
     background-color: #dddddd;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+    margin: 0;
+    margin-top: -3%;
 }
 
 .boton_mostrar{
@@ -150,6 +163,7 @@ input[type="checkbox"]:checked:hover {
 .btn {
     background: #270722 !important;
     color: white !important;
+
 }
 
 .boton_mostrar a{
@@ -170,14 +184,45 @@ input[type="checkbox"]:checked:hover {
 
 }
 
+.solicitud h4 {
+    font-size: 2rem;
+    text-align: end;
+    margin: 0;
+}
+
+.btn_Enviar .btn{
+    width: 4rem;
+    height: 2.5rem;
+}
+
+@media (max-width: 1200px) {
+    .card-text {
+        font-size: 0.8rem;
+    }
+    .card-body h5 {
+        font-size: 1.25rem;
+    }
+}
+
 /* Querys */
 @media (max-width: 767.98px) {
     .catalogo_titulo h1{
         font-size: 2.5rem;
     }
+    .seccion_compra h3 {
+        font-size: 1.25rem;
+    }
 
     .card-title {
-        text-align: center !important;
+        font-size: 2.5rem !important;
+    }
+
+    .card-title{
+        text-align: start !important;
+    }
+
+    .left .card-title{
+        margin-left: 20%;
     }
 
     .card-text {
@@ -191,5 +236,13 @@ input[type="checkbox"]:checked:hover {
 
     .list-group-item {
         font-size: 1.5rem;
+    }
+    .seccion_compra img {
+        height: 15rem;
+        width: 20rem;
+    }
+    .resultado {
+        background-color: #dddddd;
+        font-size: 2rem;
     }
 }

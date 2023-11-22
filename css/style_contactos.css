@@ -1,0 +1,53 @@
+.titulo h1 {
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: lighter;
+    line-height: normal;
+
+    font-size: 3.5rem;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+.seccion_contactos {
+    margin-bottom: 20%;
+}
+
+.seccion_contactos h3{
+    margin-top: 5%;
+    margin-right: 10%;
+    font-size: 1.5rem;
+    margin-bottom: 5%;
+}
+
+.seccion_contactos img {
+    height: 75%;
+    width: auto;
+    display: grid;
+    place-items: center;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+form {
+    margin-bottom: 5%;
+}
+
+.form-control {
+    height: 3rem;
+}
+
+.btn-primary {
+    margin-top: 10%;
+    background-color: #270722 !important;
+    border-color: #EFBCD5 !important;
+}
+
+@media (max-width: 991.98px) {
+    .IMGEDS {
+        opacity: 0;
+        height: 0px;
+        margin: 0 0 0 0;
+    }
+ }
